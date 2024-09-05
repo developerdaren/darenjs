@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document JS</title>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
+
 <body>
     <div>
         <form id="formularioContacto">
             <label for="nombre">nombre</label>
             <input type="text" id="nombre">
-
-
+            <p id="mensaje" class="d-none">el nombre es incorrecto</p>
+            <p id="mensajeExitoso" class="d-none">campo correcto</p>
+            <div>
+                <label for="apellido">apellido</label>
+                <input type="text" id="apellido">
+                <p id="mensajeApellido" class="d-none">el nombre es incorrecto</p>
+                <p id="mensajeExitoso" class="d-none">campo correcto</p>
+            </div>
+            <div>
+                <label for="edad">cual es su edad</label>
+                <input type="text" id="edad">
+                <p id="mensajeEdad" class="d-none">el nombre es incorrecto</p>
+                <p id="mensajeExitoso" class="d-none">campo correcto</p>
+            </div>
+            <button type="button">enviar</button>
         </form>
-        <p id="mensaje" class="d-none">el nombre es incorrecto</p>
+        
 
     </div>
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
